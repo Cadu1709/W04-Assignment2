@@ -1,0 +1,105 @@
+/* Reset default margin and padding on all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a base font size and family to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #094fbd;
+}
+
+/* Hero Images and message */
+#hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -100px; 
+}
+#hero-box {
+    grid-column: 1/7;
+    grid-row: 1/5;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg {
+    grid-column: 1/6;
+    grid-row: 3/3;
+    margin-top: 100px;
+    text-align: center;
+    color:#094fbd
+}
+
+#home-title{
+    color:#094fbd
+}
+/* Container for Content */
+#content {
+  width: 1600px; /* Set max-width for content container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Header Styles */
+header {
+    background-color: #094fbd;
+    padding: 20px;
+    position: relative; /* Allows positioning of child elements */
+    text-align: left;/* Align the header content to the left */
+}
+
+#logo_link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    margin: 0 auto; /* Center horizontally */
+    display:left; 
+}
+
+/* Empty div with id "background" and a specified height */
+#background {
+    height: 725px;
+    background-color: #fff; /* Add a background color if needed */
+}
+
+.msg {
+    grid-column: 5/10;
+    grid-row: 12/12;
+    background-color: #fff;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #080808;
+    line-height: 1.5em;
+}
+.msg h2 {
+    margin: 0;
+    color: #080808;
+}
+.msg p {
+    font-size: .8em;
+    color: #080808;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #094fbd;
+    color: white;
+    padding: 20px;
+    text-align: left;/* Align the footer content to the left */
+}
+
+.home-grid {
+    text-align: center; /* Center only the main content */
+}
+
+.icon {
+    width: 80px; /* Apply width to social icons */
+}
